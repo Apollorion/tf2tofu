@@ -1,0 +1,12 @@
+{
+  "name": "tf2tofu",
+  "description": "Redirect Terraform Docs Links to OpenTofu",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["*://registry.terraform.io/*", "*://developer.hashicorp.com/*"],
+      "js": ["background.js"]
+    }
+  ]
+}
